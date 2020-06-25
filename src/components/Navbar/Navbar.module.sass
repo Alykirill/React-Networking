@@ -1,0 +1,28 @@
+@import ../../_variables
+    
+.navbar
+    grid-area: n
+    user-select: none
+    nav
+        position: sticky
+        top: 80px
+        @media (max-width: 700px)
+            display: none
+        a
+            color: $brand-color1
+            padding: 10px
+            display: block
+            cursor: pointer
+            text-align: center
+            transition: 0.2s
+            @media (max-width: 700px)
+                display: inline-block
+                font-weight: bolder
+            &:hover
+                letter-spacing: 1px
+            &.active
+                color: $brand-color2
+                font-weight: bolder
+
+
+
